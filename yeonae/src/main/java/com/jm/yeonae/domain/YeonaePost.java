@@ -1,18 +1,19 @@
-package com.jm.yeonae.repository;
+package com.jm.yeonae.domain;
 
 public class YeonaePost {
+    private Long id;
     private String title;
     private String content;
     private String location;
     private String author;
     private String create_at;
 
-    public String getCreate_at() {
-        return create_at;
+    public Long getId() {
+        return id;
     }
 
-    public void setCreate_at(String create_at) {
-        this.create_at = create_at;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -45,5 +46,13 @@ public class YeonaePost {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public String getCreate_at() {
+        return create_at;
+    }
+
+    public void setCreate_at(String create_at) {
+        this.create_at = create_at;
     }
 }
